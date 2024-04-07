@@ -1,0 +1,97 @@
+body, html
+{
+    margin: 2%;
+    background-color: black;
+    text-align: center;
+    display: grid;
+    grid-template: 100px auto 100px 10px / 100px auto 100px;
+    gap: 20px;
+}
+
+header
+{
+    background-color: black;
+    color: white;
+
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+}
+
+nav
+{
+    background-color: white;
+    padding: 10pt;
+}
+
+nav a
+{
+    color: black;
+    text-decoration: underline;
+    margin-right: 5pt;
+}
+
+a:hover
+{
+    color:darkred;
+}
+
+#board
+{
+    color: darkgoldenrod;
+
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
+
+    display: flex;
+    justify-content: center;
+}
+
+#background {
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px; height: 500px;
+    overflow-x: hidden;   
+}
+
+.sideboard
+{
+    border: 3px solid white;
+    float: left;
+    margin: 1%;
+    padding: 1%;
+    width: 300px;
+}
+
+#log
+{
+    padding: 8pt;
+    background-color: whitesmoke;
+    color: black;
+    overflow-y: scroll;
+
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+}
+
+footer {
+  color: gray;
+  font: 8pt;
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 3;
+}
+
+.avatars 
+{
+    max-height: 95px;
+    max-width: 85px;
+}
+
+#spooder
+{
+    width: 400px;
+    position: relative;
+    left: 50px;
+    bottom: -150px;
+    margin: 0; 
+}
